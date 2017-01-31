@@ -2,19 +2,20 @@
 <body>
     <% include partials/header.ejs %>
     <main>
-    <div class="container"></div>
-    <div class="section no-pad-bot" id="index-banner">
+    <div class="row center">
+    <div class="col s12" id="main">
+    <div class="valign-wrapper">
         <div class="container">
-          <h1 class="header center-on-small-only">Steven Gallo</h1>
+          <h1 class="header center">Steven Gallo</h1>
           <div class='row center'>
-            <h4 class ="header col s12 light center">Full Stack Web Developer</h4>
+            <h4 class ="header col s12 center">Full Stack Web Developer</h4>
           </div>
           <div class="row center">
-            <a href="" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
+            <a href="<%='/about'%>" id="download-button" class="col l4 m4 s12 pull-l2 btn-large waves-effect waves-light">About</a>
+            <a href="<%='/projects'%>" id="download-button" class="col l4 m4 s12 btn-large waves-effect waves-light">Projects</a>
+            <a href="<%='/contact'%>" id="download-button" class="col l4 m4 s12 push-l2 btn-large waves-effect waves-light">Contact</a>
           </div>
-          <div class="row center"></div>
-
-          <div class=" row center">
+          </div>
           </div>
           </div>
         </div>

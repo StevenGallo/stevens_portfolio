@@ -2,7 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-    res.render('about', { title: 'about' });
+    res.render('about', {
+        title: 'about',
+        envi: (process.env.NODE_ENV)
+    });
 });
 
 module.exports = router;

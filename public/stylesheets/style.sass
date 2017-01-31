@@ -1,12 +1,27 @@
-$footerColor: blue
+$elementColor: rgba(225, 225, 225, 0.5)
+$buttonColor: #2a98f3
+
+html
+  background: url("../images/forest.jpg") no-repeat center center fixed
+  background-size: cover
 
 body
   padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-
+  display: flex
+  min-height: 100vh
+  flex-direction: column
 a
   color: #00B7FF
 
+#main
+  background-color: $elementColor
+
 footer.page-footer
-  background-color: $footerColor
+  background-color: $elementColor
   
+main 
+  flex: 1 0 auto
+  
+#download-button
+  background-color: $buttonColor
